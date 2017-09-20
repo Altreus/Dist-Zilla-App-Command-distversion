@@ -4,7 +4,7 @@ use Capture::Tiny 'capture';
 use strict;
 use warnings;
  
-our $VERSION = '0.001';
+our $VERSION = '0.003';
  
 use Dist::Zilla::App -command;
 
