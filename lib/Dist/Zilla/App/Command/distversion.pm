@@ -1,5 +1,6 @@
 package Dist::Zilla::App::Command::distversion;
 
+# PODNAME: dzil distversion
 # ABSTRACT: report the dist version on stdot
  
 use strict;
