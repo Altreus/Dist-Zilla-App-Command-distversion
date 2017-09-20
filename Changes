@@ -2,5 +2,9 @@ Change history for Dist::Zilla::App::Command::distversion
 
 {{$NEXT}}
 
+0.002     2017-09-20 23:14:09 BST
+    - Now that everyone's noticed it I get to fix my silly mistakes
+
+0.001
     - Created
     - If this gets any features I'll be amazed
