@@ -5,7 +5,7 @@ package Dist::Zilla::App::Command::distversion;
 use strict;
 use warnings;
  
-our $VERSION = '0.01';
+our $VERSION = '0.001';
  
 use Dist::Zilla::App -command;
 
