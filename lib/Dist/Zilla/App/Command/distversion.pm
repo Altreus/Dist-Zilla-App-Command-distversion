@@ -1,7 +1,5 @@
 package Dist::Zilla::App::Command::distversion;
 use Capture::Tiny 'capture';
-
-# ABSTRACT: report the dist version on stdot
  
 use strict;
 use warnings;
@@ -28,6 +26,14 @@ sub execute {
 }
 
 1;
+
+=head1 NAME
+
+Dist::Zilla::App::Command::distversion - report your dist version
+
+=head1 DESCRIPTION
+
+Tries to output the current version of your distribution onto stdout
 
 =head1 SYNOPSIS
 
