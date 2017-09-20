@@ -21,7 +21,7 @@ sub execute {
 		$_->prune_files        for @{ $self->zilla->plugins_with(-FilePruner) };
 
 		$self->zilla->version;
-	}
+	};
     print $self->zilla->version, "\n";
 }
 
