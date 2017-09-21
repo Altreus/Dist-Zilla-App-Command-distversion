@@ -15,7 +15,8 @@ sub execute {
     my $self = shift;
 	# Something might output.
 	capture {
-        # https://metacpan.org/source/RJBS/Dist-Zilla-6.010/lib/Dist/Zilla/Dist/Builder.pm#L348-352
+        # https://metacpan.org/source/RJBS/Dist-Zilla-6.010/lib/Dist/Zilla/Dist/Builder.pm#L344,348-352
+        $_->before_build       for @{ $self->zilla->plugins_with(-BeforeBuild) };          
 		$_->gather_files       for @{ $self->zilla->plugins_with(-FileGatherer) };
 		$_->set_file_encodings for @{ $self->zilla->plugins_with(-EncodingProvider) };
 		$_->prune_files        for @{ $self->zilla->plugins_with(-FilePruner) };
