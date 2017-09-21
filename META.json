@@ -49,7 +49,7 @@
    "provides" : {
       "Dist::Zilla::App::Command::distversion" : {
          "file" : "lib/Dist/Zilla/App/Command/distversion.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       }
    },
    "release_status" : "stable",
@@ -64,7 +64,7 @@
          "web" : "https://github.com/Altreus/Dist-Zilla-App-Command-distversion"
       }
    },
-   "version" : "0.002",
+   "version" : "0.003",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.026000"
@@ -253,7 +253,7 @@
                   "branch" : null,
                   "changelog" : "Changes",
                   "signed" : 0,
-                  "tag" : "v0.002",
+                  "tag" : "v0.003",
                   "tag_format" : "v%v",
                   "tag_message" : "v%v"
                },
