@@ -13,16 +13,16 @@ sub description { "Asks dzil what version the dist is on, then prints that" }
 sub usage_desc  { "%c" }
 sub execute {
     my $self = shift;
-	# Something might output.
-	capture {
+    # Something might output.
+    capture {
         # https://metacpan.org/source/RJBS/Dist-Zilla-6.010/lib/Dist/Zilla/Dist/Builder.pm#L344,348-352
         $_->before_build       for @{ $self->zilla->plugins_with(-BeforeBuild) };          
-		$_->gather_files       for @{ $self->zilla->plugins_with(-FileGatherer) };
-		$_->set_file_encodings for @{ $self->zilla->plugins_with(-EncodingProvider) };
-		$_->prune_files        for @{ $self->zilla->plugins_with(-FilePruner) };
+        $_->gather_files       for @{ $self->zilla->plugins_with(-FileGatherer) };
+        $_->set_file_encodings for @{ $self->zilla->plugins_with(-EncodingProvider) };
+        $_->prune_files        for @{ $self->zilla->plugins_with(-FilePruner) };
 
-		$self->zilla->version;
-	};
+        $self->zilla->version;
+    };
     print $self->zilla->version, "\n";
 }
 
